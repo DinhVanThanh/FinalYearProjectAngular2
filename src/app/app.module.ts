@@ -3,15 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Templates/header/header.component'; 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SidebarComponent } from './Templates/sidebar/sidebar.component';
+import { SearchbarComponent } from './Templates/searchbar/searchbar.component'; 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent,
+    SearchbarComponent
   ],
   imports: [
-    BrowserModule ,BrowserAnimationsModule
+    BrowserModule ,BrowserAnimationsModule, NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

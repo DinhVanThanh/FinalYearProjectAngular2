@@ -7,6 +7,7 @@
  */
 
 // Dependencies
+ 
 @import "../node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize";
 @import '../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
 @import '../node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/true';
@@ -25,6 +26,7 @@
 @import 'assets/foundation-sites/global';
 
 // Components
+@import '../node_modules/foundation-sites/scss/xy-grid/xy-grid';
 @import '../node_modules/foundation-sites/scss/grid/grid';
 @import '../node_modules/foundation-sites/scss/typography/typography';
 @import '../node_modules/foundation-sites/scss/forms/forms';
@@ -114,6 +116,7 @@
   @if $flex {
     @include foundation-flex-classes;
   }
+  
 }
 
 @include foundation-everything(true);
