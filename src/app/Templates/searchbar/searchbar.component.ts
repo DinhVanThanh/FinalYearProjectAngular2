@@ -13,7 +13,7 @@ export class SearchbarComponent implements OnInit {
   ngOnInit() {
 
     this.InitDatetimePicker();
-     
+     this.InitInputNumberPerson();
     
   }
     InitDatetimePicker()
@@ -46,5 +46,25 @@ export class SearchbarComponent implements OnInit {
           }).on('changeDate', function (ev) {
             checkout.hide();
           }).data('datepicker');
+    }
+
+    InitInputNumberPerson()
+    {
+      $('.input-number-increment').click(function() {
+        var $input = $('.input-number');
+        var val = parseInt($input.text(), 10);
+        $input.text(val + 1);
+      });
+      
+      $('.input-number-decrement').click(function() {
+        var $input = $('.input-number');
+        var val = parseInt($input.text(), 10);
+        if(val > 0)
+          $input.text(val - 1);
+        else
+            $input.text(0);
+      })
+      
+      
     }
 }

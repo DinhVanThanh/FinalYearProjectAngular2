@@ -1,0 +1,110 @@
+#div-accommodation-informations{
+
+    #hotel-header-container{
+        #assessment-point-block{
+          width: 150px;
+          float: right;
+          text-align: right;
+          #assessment-point{
+            color: #0283df;
+            font-size: 32px;
+            
+          }
+    
+          #assessment-label{
+              font-size: 18px;
+              margin-right: 10px;
+              color: #636363;
+          }
+        }
+    
+        .div-accommodation-title-block{
+            height: 100px;
+            width: 100%;
+            .h3-accommodation-title{
+                width: 100%;
+                display: inline-block;
+            }
+        
+            //built-in block 
+            //rating
+            $alert-color:orange;
+            $rating-block-margin-bottom: 2rem; //spacing below each rating line
+            $rating-block-star-color: $alert-color;
+        
+            .rating-block {
+              padding: 2px 5px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              display: inline-block;
+              .ratings-type {
+                margin-right: 1rem;
+                margin-bottom: 0;
+              }
+        
+              .rating-block {
+                display: flex;
+                align-items: center;
+                margin-bottom: $rating-block-margin-bottom;
+              }
+        
+              .rating-block-rating {
+                display: flex;
+              }
+        
+              .star {
+                cursor: pointer;
+                stroke: $rating-block-star-color;
+              }
+        
+              .rating-block-rating .star.selected polygon {
+                fill: $rating-block-star-color;
+              }
+        
+              .rating-block-rating.is-voted .star polygon {
+                fill: $rating-block-star-color;
+              }
+        
+              .rating-block-rating.is-voted .star.selected ~ .star polygon {
+                fill: transparent;
+              }
+            }
+        }
+    }
+
+    #hotel-mosaic-container{
+      .hotel-mosaic { 
+        margin-bottom: 20px;
+        width: 100%; 
+         
+      }
+    }
+
+    .room-choice-title{
+     padding-top:40px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid #ddd;
+      .RoomGrid-title {
+          font-size: 24px;
+          color: rgba(0,0,0,.75);
+      }
+
+      .RoomGrid-titleCounters {
+          display: block;
+          margin-top: 8px;
+          font-size: 16px;
+          color: #333;
+      }
+
+      .OneLineTaxAndSurcharge {
+          color: gray;
+          font-size: 10px;
+          display: inline;
+      }
+    }
+    
+    #room-blocks{
+      padding-top: 10px;
+    }
+}

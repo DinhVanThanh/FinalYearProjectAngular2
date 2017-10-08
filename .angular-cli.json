@@ -20,13 +20,20 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "../node_modules/foundation-datepicker/css/foundation-datepicker.min.css" 
+        "../node_modules/foundation-datepicker/css/foundation-datepicker.min.css" ,
+         "../node_modules/font-awesome/css/font-awesome.min.css",
+         "../src/assets/carousels/themes/default/ug-theme-default.css",
+         "../src/assets/carousels/css/unite-gallery.css"
+         
       ],
-      "scripts": [
+      "scripts": [ 
+        "../src/assets/carousels/js/jquery-11.0.min.js",
         "../node_modules/jquery/dist/jquery.min.js", 
         "../node_modules/foundation-sites/dist/js/foundation.min.js", 
-        "../node_modules/foundation-datepicker/js/foundation-datepicker.js" 
-         
+        "../node_modules/foundation-datepicker/js/foundation-datepicker.js" ,
+        "../src/assets/carousels/themes/default/ug-theme-default.js",
+        "../src/assets/carousels/js/unitegallery.min.js"
+        
         
       ],
       "environmentSource": "environments/environment.ts",

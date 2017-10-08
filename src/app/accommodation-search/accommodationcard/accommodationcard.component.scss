@@ -1,0 +1,182 @@
+.div-container-card-accommodation{
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 270px;
+    line-height: 2;
+    box-shadow: 6px 6px 10px #888888;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+
+    .div-price-and-interaction-card-accommodation
+    {
+        #div-price-accommodation-card{
+            height: 150px; 
+            
+            .span-price-sale-label{
+                color: #646464;
+                text-decoration: line-through;
+                font-size: 1.6rem;
+                float: right;
+            }
+            .span-price-label{
+                font-size:  2.2rem;
+                float: right;
+                color: #ee595d;
+            }
+        }
+        #div-reserve-accommodation-card{
+              
+            #button-room-reserve{
+                float: right;
+                width: 150px; 
+            }
+        }
+    }
+    
+    .div-image-card-accommodation:hover .image-accommodation-avatar {
+        opacity: 0.3;
+    }
+      
+    .div-image-card-accommodation:hover .dark-overlay-information {
+        opacity: 1;
+    }
+      
+    .div-image-card-accommodation{
+        float: left;
+        position: relative;
+        .image-accommodation-avatar{
+            width: 250px;
+            height: 250px;
+            z-index: 1;
+        }
+
+        .dark-overlay-information{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            .dark-overlay-information-title{
+                position: absolute;
+                bottom: 50px;
+                left: 20px;
+                color: #fff;
+                font-size: 24px;
+                line-height: 28px;
+                width: calc(100% - 40px);
+            }
+            .dark-overlay-information-caption :hover{
+                color: #84b5fe;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                text-overflow: ellipsis;
+                font-size: 13px;
+                text-transform: uppercase;
+                width: calc(100% - 40px);
+                font-weight: 800;
+            }
+        }
+    }
+    .div-content-card-accommodation{
+        float: left;
+        padding: 10px 10px;
+
+        .label{
+            cursor: pointer;
+        }
+
+        .rating-block{
+            height: 27px;
+        }
+
+        .p-accommodation-info{
+            width: 300px;
+            word-wrap: break-word;
+        }
+ 
+        .button-assessment-point-block{
+            width: 35px;
+            height: 35px;
+            background-color: royalblue;
+            color: whitesmoke;
+            border-radius: 4px;   
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+            
+          }
+    
+          .button-assessment-point-block :hover{
+            border: 1px solid;
+            border-color :black;
+          }
+
+          .div-assessment-block{
+              
+          }
+
+          .span-assessmentl-label{
+              font-weight: bold;
+          }
+
+
+        //built-in blocks
+        
+        .rating-block {
+            padding: 2px 5px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+        }
+        
+        .rating-block .ratings-type {
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+        
+        .rating-block .rating-block {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .rating-block .rating-block-rating {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        
+        .rating-block .star {
+            cursor: pointer;
+            stroke: #cc4b37;
+        }
+        
+        .rating-block .rating-block-rating .star.selected polygon {
+            fill: #cc4b37;
+        }
+        
+        .rating-block .rating-block-rating.is-voted .star polygon {
+            fill: #cc4b37;
+        }
+        
+        .rating-block .rating-block-rating.is-voted .star.selected ~ .star polygon {
+            fill: transparent;
+        }
+        
+  
+    }
+}

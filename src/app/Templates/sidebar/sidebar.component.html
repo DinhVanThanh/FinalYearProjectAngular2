@@ -1,12 +1,203 @@
 <ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tiêu chí chính</a></li>
-  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tiêu chí phụ</a></li>
+  <li class="tabs-title is-active"><a data-tabs-target="container-primary-criteria-tab" href="#container-primary-criteria-tab" aria-selected="true">Tiêu chí chính</a></li>
+  <li class="tabs-title"><a data-tabs-target="container-extra-criteria-tab" href="#container-extra-criteria-tab">Tiêu chí phụ</a></li>
 </ul>
-<div class="tabs-content" data-tabs-content="example-tabs">
-  <div class="tabs-panel is-active" id="panel1">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+<div class="tabs-content" data-tabs-content="example-tabs" >
+  <div class="tabs-panel is-active" id="container-primary-criteria-tab">
+     <table>
+       <tbody>
+         <tr>
+           <td>
+            Hạng khách sạn
+           </td>
+         </tr>
+         <tr>
+          <td>
+            <div class="rating-block">
+            
+            <div class="rating-block-rating" data-rating>
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 40 37">
+                  <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                </svg>
+              </div>
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 40 37">
+                  <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                </svg>
+              </div>
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 40 37">
+                  <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                </svg>
+              </div>
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 40 37">
+                  <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                </svg>
+              </div>
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 40 37">
+                  <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            Đánh giá của khách
+          </td>
+        </tr>
+        <tr>
+            <td>
+              <div class="div-assessment-blocks">
+                <div class="div-assessment-block">
+                    <button id="assessment-point-1" class="button-assessment-point-block">
+                        0+
+                    </button>
+                </div>
+                <div class="div-assessment-block">
+                    <button id="assessment-point-2" class="button-assessment-point-block">
+                        70+
+                    </button>
+                </div>
+                <div class="div-assessment-block">
+                    <button id="assessment-point-3" class="button-assessment-point-block">
+                        75+
+                    </button>
+                </div>
+                <div class="div-assessment-block">
+                    <button id="assessment-point-4" class="button-assessment-point-block">
+                        80+
+                    </button>
+                </div>
+                <div class="div-assessment-block">
+                    <button id="assessment-point-5" class="button-assessment-point-block">
+                        85+
+                    </button>
+                </div> 
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>Giá</td>
+          </tr>
+          <tr>
+              <td>
+                <div id="div-max-price-block">
+                  Tối đa <span id="span-max-price-label">17.000.000đ</span>
+                </div>
+                <div>
+                  <span id="span-begin-price" class="span-price-label" >600.000đ</span>
+                  <span id="span-final-price" class="span-price-label" >50.000.000đ</span>
+                </div>
+                <div class="slider" data-slider data-initial-start="50" data-end="200">
+                    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                    <input type="hidden">
+                </div>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Hiện khách sạn còn phòng</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Khoảng cách từ</td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <select  name="state">
+                            <option selected="selected" value="AL">Trung tâm thành phố</option> 
+                            <option value="WY">Wyoming</option>
+                          </select> 
+                    </div>
+                     <div>
+                        <div id="div-max-price-block">
+                            Tối đa <span id="span-max-price-label">2km</span>
+                          </div>
+                          <div>
+                            <span id="span-begin-price" class="span-price-label" >1km</span>
+                            <span id="span-final-price" class="span-price-label" >20km</span>
+                          </div>
+                          <div class="slider" data-slider data-initial-start="50" data-end="200">
+                              <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+                              <span class="slider-fill" data-slider-fill></span>
+                              <input type="hidden">
+                          </div>
+                     </div>
+                     <div>
+                        <input type="search" name="search-address" placeholder="Địa chỉ.." class="animated-search-form">
+                         
+                     </div>
+                </td>
+              </tr>
+              <tr>
+                <td> 
+                    Tìm theo tên khách sạn 
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <input type="search" name="search-hotel" placeholder="Tên khách sạn..." class="animated-search-form">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="hollow button" href="#">Chọn lại toàn bộ tiêu chí</button>
+                </td>
+              </tr>
+       </tbody>
+     </table>
   </div>
-  <div class="tabs-panel" id="panel2">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  <div class="tabs-panel" id="container-extra-criteria-tab">
+      <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
+          <li>
+            <a href="#">Trang thiết bị tại khách sạn</a>
+            <ul class="menu vertical sublevel-1">
+              <li>
+                  <input id="checkbox4" type="checkbox"><label for="checkbox4"> Bác sĩ hiện trường </label>
+              </li>
+              <li>
+                  <input id="checkbox2" type="checkbox"><label for="checkbox2"> Bãi đỗ xe </label>
+              </li>
+              <li>
+                  <input id="checkbox3" type="checkbox"><label for="checkbox3"> Bể bơi ngoài trời </label>
+              </li>
+            </ul>
+          </li>   
+          <li>
+              <a href="#"> Hình thức chỗ ở</a>
+              <ul class="menu vertical sublevel-1">
+                <li>
+                    <input id="checkbox4" type="checkbox"><label for="checkbox4"> Bed and Breakfast </label>
+                </li>
+                <li>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2"> Căn hộ có phục vụ </label>
+                </li>
+                <li>
+                    <input id="checkbox3" type="checkbox"><label for="checkbox3"> Căn hộ nghỉ dưỡng </label>
+                </li>
+              </ul>
+            </li>   
+            <li>
+              <a href="#"> Thức ăn và đồ uống</a>
+              <ul class="menu vertical sublevel-1">
+                <li>
+                    <input id="checkbox4" type="checkbox"><label for="checkbox4"> Đồ ăn Hồi giáo </label>
+                </li>
+                <li>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2"> Phục vụ trọn gói </label>
+                </li> 
+              </ul>
+            </li>  
+            <li>
+                <button class="hollow button" href="#">Chọn lại toàn bộ tiêu chí</button>
+            </li> 
+        </ul>
+        
+        
   </div>
 </div>

@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\Templates",
+    "\\src\\app\\Templates\\searchbar"
   ],
+  "SelectedNode": "\\src\\app\\Templates\\searchbar\\searchbar.component.ts",
   "PreviewInSolutionExplorer": false
 }

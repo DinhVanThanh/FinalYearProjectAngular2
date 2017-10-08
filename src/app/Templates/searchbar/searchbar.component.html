@@ -1,6 +1,7 @@
 <div class="search-bar-container">
         <div class="div-text-place">
-                <input type="text"   id="input-text-place" placeholder="Nhập địa điểm du lịch hoặc tên khác...">
+                <label>Địa điểm</label> 
+                <input id="input-text-place" type="search" name="search" placeholder="Nhập địa điểm du lịch hoặc tên khác..." class="animated-search-form">
           </div>
         <div class="div-datetimepicker-checkin">
               <label>Ngày đi</label> <input type="text"   id="input-datetimepicker-checkin">
@@ -9,9 +10,34 @@
                 <label>Ngày đến</label>  <input type="text"  id="input-datetimepicker-checkout">
         </div>
         <div class="div-dropdown-menu-capacity">
-                <button id="button-dropdown-menu-capacity" class="button" type="button" data-toggle="example-dropdown">Số người <span> &#9660;</span></button>
-                <div class="dropdown-pane" id="example-dropdown" data-dropdown data-close-on-click="true">
-                   asdasd
+                <button id="button-dropdown-menu-capacity" class="button" type="button" data-toggle="capacity-dropdown">
+                        <i class="fa fa-users" aria-hidden="true"></i> 
+                        <span>3 người, phòng đôi</span> 
+                        <span style="float:right;"> &#9660;</span>
+                </button>
+                <div class="dropdown-pane" id="capacity-dropdown" data-dropdown data-close-on-click="true">
+                  <div id="div-number-persons">
+                    <!--<div style="display:inline;" id="span-person-label">Người</div>     
+                        <div style="width:70%" class="input-group input-number-group">
+                                <div class="input-group-button">
+                                        <span class="input-number-decrement">-</span>
+                                </div>
+                                <input class="input-number" type="text" value="1">
+                                <div class="input-group-button">
+                                        <span class="input-number-increment">+</span>
+                                </div>
+                                 
+                        </div>--> 
+                    <i class="fa fa-minus input-number-decrement" style="float:left;" aria-hidden="true"></i>
+                    <span class="input-number" >2</span>&nbsp; Người
+                    <i class="fa fa-plus input-number-increment" style="float:right;" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                        <select  name="state">
+                                <option selected="selected" value="AL">Phòng đơn</option> 
+                                <option value="WY">Phòng đôi</option>
+                        </select> 
+                </div>
                 </div>
         </div>
         <div class="div-button-search-accommodation">
@@ -19,6 +45,5 @@
                  
         </div>
 </div>
- 
  
  

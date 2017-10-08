@@ -1,18 +1,121 @@
+//user defined
 .search-bar-container{
     margin-top: 20px;
     padding: 10px 10px;
     background-color: whitesmoke;
+    box-shadow: 6px 6px 10px #888888;
+
+    .div-datetimepicker-checkin ,.div-button-search-accommodation, .div-datetimepicker-checkout, .div-text-place, .div-dropdown-menu-capacity {
+      display: inline-block;
+  } 
+  .div-text-place{
+      width: 360px;
+  }
+  #button-dropdown-menu-capacity{
+      margin-top: 14px;
+      width: 250px;
+  }
+  #button-search-accommodation{
+      margin-top: 14px;
+  }
+  
+  #div-number-persons {
+    background-color: white;
+    padding: 10px 10px;
+    text-align:center;
+  
+    .div-position-left {
+      float: left;
+      width: 60px;
+    }
+  
+    .div-position-center {
+      display: inline-block;
+      margin: 0 auto;
+      width: 60px;
+    }
+  
+    .div-position-right {
+      float: right;
+      width: 60px;
+    }
+  
+    #span-person-label {
+      display: inline-block;
+    }
+  
+    //built-in blocks
+    .input-number-group .input-group-button {
+      line-height: calc(80px/2 - 5px);
+    }
+  
+    .input-number-group .input-number {
+      width: 60px; 
+      vertical-align: top;
+      text-align: center;
+      outline: none;
+      display: inline-block;
+    }
+  
+    .input-number-group .input-number,
+    .input-number-group .input-number-decrement,
+    .input-number-group .input-number-increment {
+      border: 1px solid #cacaca;
+      height: 35px;
+    }
+  
+    .input-number-group .input-number-decrement,
+    .input-number-group .input-number-increment {
+      
+      width: 35px;
+      height: 35px;
+      background: #e6e6e6;
+      color: #0a0a0a;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: 400;
+      border-radius: 50%;
+    }
+  
+    .input-number-group .input-number-decrement {
+      margin-right: 0.3rem;
+    }
+  
+    .input-number-group .input-number-increment {
+      margin-left: 0.3rem;
+      float:right;
+    }
+  }
+  #capacity-dropdown{
+      background-color: #E6E6E6;
+  }
 }
-.div-datetimepicker-checkin ,.div-button-search-accommodation, .div-datetimepicker-checkout, .div-text-place, .div-dropdown-menu-capacity {
-    display: inline-block;
-} 
-#input-text-place{
-    width: 400px;
-}
-#button-dropdown-menu-capacity{
-    margin-top: 14px;
-    width: 200px;
-}
-#button-search-accommodation{
-    margin-top: 14px;
-}
+
+
+
+
+  
+  
+
+//built-in
+// $animated-search-form-initial-width: 10rem;
+// $animated-search-form-transition-duration: 0.4s;
+// $light-gray : #E6E6E6;
+// $global-radius : 0px;
+// .animated-search-form[type=search] {
+//   width: $animated-search-form-initial-width;
+//   border: 0.125rem solid $light-gray;
+//   box-shadow: 0 0 3.125rem rgba(0,0,0, 0.18);
+//   border-radius: $global-radius;
+//   background-image: url('//image.ibb.co/i7NbrQ/search_icon_15.png');
+//   background-position: 0.625rem 0.625rem;
+//   background-repeat: no-repeat;
+//   padding: 0.75rem 1.25rem 0.75rem 2rem;
+//   transition: width $animated-search-form-transition-duration ease-in-out;
+
+//   &:focus {
+//     width: 100%;
+//   }
+// }
