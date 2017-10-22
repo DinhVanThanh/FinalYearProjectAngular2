@@ -1,4 +1,21 @@
-#div-accommodation-informations{
+#div-accommodation-informations{ 
+    .has-text-centered{
+       margin-left: 40%;
+
+    }
+    .table-description-container{
+      border: none;
+      border-collapse: separate;
+      border-spacing: 30px 50px;
+      .td-policy-title, .td-service-title, .td-description-title{
+        width: 20%;
+        border-top: 1px solid #BDBDBD;
+      }
+      .td-policy-list, .td-service-list, .td-description-list{
+        width: 70%;
+        border-top: 1px solid #BDBDBD;
+      } 
+    }
 
     #hotel-header-container{
         #assessment-point-block{

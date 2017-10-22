@@ -1,0 +1,90 @@
+$container-content-heigh: 88%;
+.div-container-content-room{
+    overflow:auto; 
+    background-color: #FFFFFF;
+    .div-price-and-interaction-card-accommodation
+    {
+        height: $container-content-heigh;
+        width: 30%;
+        float: right;
+        
+        #div-price-accommodation-card{ 
+            height: 50%;
+            width: 100%; 
+            background-color: #FFFFFF;
+            .span-price-sale-label{ 
+                width: 150px;
+                color: #646464;
+                text-decoration: line-through;
+                font-size: 1.6rem;
+                float: right;
+            }
+            .span-price-label{ 
+                width: 200px;
+                font-size:  2.2rem;
+                float: right;
+                color: #ee595d;
+            }
+        }
+        #div-reserve-accommodation-card{  
+             
+              width: 100%;; 
+              height: 50%;  
+            #button-room-reserve{
+                 margin-top: 70px;
+                float: right;
+                width: 150px; 
+                
+            }
+        }
+    }
+
+    .div-capacity-card-accommodation{
+        width: 17%;
+        height: $container-content-heigh; 
+        float: left;
+        padding-top: 10px;
+        .div-person-number-container
+        {  
+            .span-label-person-number{
+                  
+                font-size: 20px;
+                color: #BDBDBD;
+            }  
+        }
+        
+         
+    }
+    
+    .div-quantity-card-accommodation{
+        width: 10%;
+        height: $container-content-heigh; 
+        float: left;
+         
+        .select-room-quantity{
+            margin-top: 50%;
+        }
+    }
+    
+    .div-content-card-accommodation{
+        float: left;
+        padding: 10px 10px;
+        width: 43%;
+        overflow: wrap;
+        height: $container-content-heigh;
+         
+        
+        .label{
+            cursor: pointer;
+        }
+
+        .rating-block{
+            height: 27px;
+        }
+
+        .p-accommodation-info{
+            width: 300px;
+            word-wrap: break-word;
+        }  
+    }
+}

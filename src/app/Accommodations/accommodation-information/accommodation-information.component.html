@@ -73,7 +73,89 @@
   </div>
   <div class="row" id="room-blocks">
       <div class="large-12 columns">
-        adasd
+        <app-room-information></app-room-information>
+      </div>
+  </div>
+  <hr/>
+  <div class="row" id="room-blocks">
+    <div class="large-12 columns">
+        <h3 class="h3">Tìm hiểu thêm về Auckland Harbour Oaks Hotel</h3>
+    </div>
+  </div>  
+  <div class="row" id="room-blocks">
+      <div class="large-12 columns">
+         <table class="table-description-container">
+           <tbody>
+             <tr>
+               <td class="td-description-title"><h5>Mô tả</h5></td>
+               <td class="td-description-list"> 
+                  Lý tưởng cho sự vui vẻ và thư giãn, Auckland Harbour Oaks Hotel tọa lạc tại Trung tâm thành phố Auckland khu vực của thành phố Auckland. 
+                  Từ đây, khách có thể dễ dàng tiếp cận được nét đẹp sống động của thành phố ở mọi góc cạnh.  
+                  Và cũng có thể dễ dàng đến Công viên Albert, Toà công lý, công ty nhà hát Auckland.
+                 </td>
+             </tr>
+             <tr>
+                <td class="td-service-title"><h5>Đặc điểm</h5></td>
+                <td class="td-service-list">Truy cập Internet
+                   
+                   miễn phí wifi tất cả các phòngwifi công cộng 
+                   Hoạt động và Thư giãn
+                   
+                   hồ bơi (ngoài trời)phòng thể dụctour du lịch
+                   Ăn uống
+                   
+                   bếpcửa hàng tiện lợi 
+                   Tiện nghi và Dịch vụ
+                   
+                   dịch vụ giặt làgiữ hành lýkhu vực hút thuốcdịch vụ phòng hàng ngàykét sắtnhân viên hướng dẫngiặt khôkhách sạn không hút thuốctiệm bán hàng
+                   Dành cho trẻ em
+                   
+                   dịch vụ trông trẻphòng gia đình 
+                   Phục vụ
+                   
+                   cho phép vật nuôinhận phòng (24 giờ)thang máynhận/trả phòng (nhanh)quầy lễ tân (24 giờ) 
+                   Di chuyển
+                   
+                   bãi đậu xe [tại chỗ]Cho thuê xechỗ đậu xe (có thu phí)
+                   Trang bị trong mọi phòng
+                   
+                   bànkhu vực chờphòng không hút thuốcban công/sân thượnglò vi sóngquạtbàn ủi (là)máy giặttivibếp nhỏmáy pha trà/cà phêtivi màn hình phẳngbồn tắmmáy sấy tóctruyền hình vệ tinh/ cápđầu đĩa DVD/CDnước đóng chai miễn phítủ lạnhđiện thoạiphòng ăn riêngvòi hoa sen
+                   Ngôn ngữ sử dụng
+                   
+                   Tiếng ViệtTiếng Ấn Độ Tiếng AnhTiếng Trung Quốc (Quan Thoại)</td>
+              </tr>
+              <tr>
+                  <td class="td-policy-title"><h5>Chính sách</h5></td>
+                  <td class="td-policy-list"> 
+                     Lý tưởng cho sự vui vẻ và thư giãn, Auckland Harbour Oaks Hotel tọa lạc tại Trung tâm thành phố Auckland khu vực của thành phố Auckland. 
+                     Từ đây, khách có thể dễ dàng tiếp cận được nét đẹp sống động của thành phố ở mọi góc cạnh.  
+                     Và cũng có thể dễ dàng đến Công viên Albert, Toà công lý, công ty nhà hát Auckland.
+                    </td>
+                </tr>
+           </tbody>
+         </table>
+      </div>
+  </div>
+  <hr/>
+  <div class="row" id="room-blocks">
+      <div class="large-12 columns">
+          <app-accommodation-review></app-accommodation-review> 
+      </div>
+  </div>
+  <hr/>
+  <div class="row" id="room-blocks">
+      <div class="large-12 columns">
+        <div>
+            <app-traveler-comment></app-traveler-comment>
+        </div>
+        <ul class="meal-list">
+            <li *ngFor="let meal of meals | paginate: { itemsPerPage: 1, currentPage: page }">
+                {{ meal }}
+            </li>
+        </ul>
+        <div class="has-text-centered">
+            <pagination-controls (pageChange)="page = $event"></pagination-controls>
+        </div>
       </div>
   </div>
 </div>

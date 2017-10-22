@@ -1,0 +1,138 @@
+.traveler-review-block{
+    .traveler-review{
+        background-color: #efeff1;
+        width: 100%;
+        margin-top: 50px;
+        height: 390px;
+        box-shadow: 6px 6px 10px #888888;
+        .div-traveler-review-type, .div-traveler-review-detail, .div-traveler-review{
+          background-color: #efeff1;
+          
+        }
+        .div-traveler-review-type{ 
+          padding: 30px 30px;
+          width: 65%; 
+           float: right;
+           position: relative;
+          .Review-traveler-select{
+            width: 40%;
+            
+            float: right;
+          }
+          .Review-traveler-label{
+            width: 40%;
+            float: left;
+          }
+        }
+  
+        .div-traveler-review-detail{
+          width: 65%; 
+          height: 20%;
+          float: right;
+          position: relative;
+          .room-review-container-detail{
+            width: 50%;
+            float: left;
+            padding-left: 35px;
+            padding-bottom: 10px;
+            padding-right: 35px;
+          }
+        }
+  
+        .div-traveler-review{
+          width: 30%;
+          height: 80%;
+          float: left;
+          padding: 30px 30px;
+          display: table;
+          
+          box-sizing: border-box;
+          overflow: auto;
+    
+          //building blocks circle assessment
+          $size : 21.25em;
+          $light-gray : #D8D8D8;
+          $dark-gray : #6E6E6E;
+          $primary-color : rgb(2, 131, 223);
+          @mixin circle-graph-circle($size) {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - #{$size/2});
+            top: calc(50% - #{$size/2});
+            width: $size;
+            height: $size;
+          }
+          
+          $circle-graph-size: 20em;
+          $circle-graph-percent-number-size: rem-calc(24);
+          $circle-graph-percent-unit-size: rem-calc(16);
+          $circle-graph-background-color: $light-gray;
+          $circle-graph-empty-color: $dark-gray;
+          $circle-graph-fill-color: $primary-color;
+          
+          .circle-graph {
+            width: $circle-graph-size;
+            height: $circle-graph-size;
+            border-radius: 50%;
+            background-color: $circle-graph-empty-color;
+            position: relative;
+          
+            &.gt-50 {
+              background-color: $circle-graph-fill-color;
+            }
+          }
+          
+          .circle-graph-progress {
+            @include circle-graph-circle($circle-graph-size);
+            clip: rect(0, $circle-graph-size, $circle-graph-size, #{$circle-graph-size/2});
+          
+            .circle-graph-progress-fill {
+              @include circle-graph-circle($circle-graph-size);
+              clip: rect(0, #{$circle-graph-size/2}, $circle-graph-size, 0);
+              background: $circle-graph-fill-color;
+              transform: rotate(60deg);
+            }
+          
+            .gt-50 & {
+              clip: rect(0, #{$circle-graph-size/2}, $circle-graph-size, 0);
+          
+              .circle-graph-progress-fill {
+                clip: rect(0, $circle-graph-size, $circle-graph-size, #{$circle-graph-size/2});
+                background: $circle-graph-empty-color;
+              }
+            }
+          }
+          .circle-graph-percents {
+            @include circle-graph-circle(#{$circle-graph-size/1.1});
+            background: $circle-graph-background-color;
+            text-align: center;
+            display: table;
+            z-index: 4;
+          
+            .circle-graph-percents-number {
+              display: block;
+              font-size: $circle-graph-percent-number-size;
+              font-weight: bold;
+              color: $circle-graph-fill-color;
+            }
+          
+            .circle-graph-percents-units {
+              display: block;
+              font-size: $circle-graph-percent-unit-size;
+              font-weight: bold;
+            }
+          }
+          .circle-graph-percents-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+            line-height: 0;
+          
+            span {
+              line-height: 1;
+            }
+          } 
+    
+        }
+      }
+}

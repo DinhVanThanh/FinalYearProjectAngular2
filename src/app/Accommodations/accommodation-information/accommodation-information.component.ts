@@ -1,17 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 declare var $:any
 @Component({
   selector: 'app-accommodation-information',
   templateUrl: './accommodation-information.component.html',
-  styleUrls: ['./accommodation-information.component.scss']
+  styleUrls: ['./accommodation-information.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AccommodationInformationComponent implements OnInit {
+
+  @Input('data') meals: string[] = ["", "", ""];
+  page: number = 1;
 
   constructor() { }
 
   ngOnInit() {
     this.InitAccommodationRating();
     this.InitCarousel();
+    this.InitCircleReview();
   }
   InitAccommodationRating()
   {
@@ -32,5 +37,19 @@ export class AccommodationInformationComponent implements OnInit {
         gallery_height:600
       }); 
     }); 
+  }
+
+  InitCircleReview()
+  {
+    $("[data-circle-graph]").each(function() {
+      var $graph = $(this),
+          percent = parseInt($graph.data('percent'), 10),
+          deg = 360*percent/100;
+      if(percent > 50) {
+        $graph.addClass('gt-50');
+      }
+      $graph.find('.circle-graph-progress-fill').css('transform','rotate('+ deg +'deg)');
+      $graph.find('.circle-graph-percents-number').html(percent+'%');
+    });     
   }
 }

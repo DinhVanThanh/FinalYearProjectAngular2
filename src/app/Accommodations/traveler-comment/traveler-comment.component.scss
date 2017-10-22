@@ -1,0 +1,43 @@
+.accommodation-traveler-comment-block{
+    .traveler-comment-left{
+        width: 100%;
+        display: inline-block;
+        padding: 40px 15px 20px 20px;
+        vertical-align: top;
+        .traveler-comment-score-label{
+            font-size: 36px;
+            font-weight: 600;
+            color: #3d81f5;
+            line-height: 36px;
+            margin-bottom: 8px;
+        }
+    }
+    .traveler-comment-right{
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        padding: 20px 20px 20px 15px;
+        vertical-align: top;
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        padding: 30px 60px 20px;
+        .Review-comment-bodyTitle{
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            position: relative;
+        }
+        .Review-comment-bodyText{
+            padding-top: 20px;
+            position: relative;
+            font-weight: 300;
+            font-size: 14px;
+            color: #4e4e4e;
+            line-height: 21px;
+        }
+        .Review-statusBar-date{
+            color: #999;
+            line-height: 40px;
+        }
+    }
+}

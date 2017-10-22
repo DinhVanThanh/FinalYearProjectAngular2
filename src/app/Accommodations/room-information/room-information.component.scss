@@ -1,0 +1,119 @@
+$container-header-heigh : 12%;
+$container-content-heigh: 88%;
+
+.div-container-card-accommodation{
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 370px;
+    line-height: 2;
+    box-shadow: 6px 6px 10px #888888;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    overflow:auto; 
+    
+    .div-container-title-room-type{
+        overflow: auto;
+    }
+
+    .div-image-card-accommodation:hover .image-accommodation-avatar {
+        opacity: 0.3;
+    }
+      
+    .div-image-card-accommodation:hover .dark-overlay-information {
+        opacity: 1;
+    }
+      
+    .div-image-card-accommodation{
+        float: left;
+        position: relative;
+        width: 20%;
+        height: $container-content-heigh - 1%;
+        background-color: #E6E6E6;
+
+        .div-room-facilities-container{
+            
+            width: 100%;
+            .div-room-facilities-list{
+                width: inherit;
+                padding-top: 6px;
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+        }
+        
+        .image-accommodation-avatar{
+            width: 100%;
+            height: 150px;
+            z-index: 1;
+        }
+
+        .dark-overlay-information{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            .dark-overlay-information-title{
+                position: absolute;
+                bottom: 50px;
+                left: 20px;
+                color: #fff;
+                font-size: 24px;
+                line-height: 28px;
+                width: calc(100% - 40px);
+            }
+            .dark-overlay-information-caption :hover{
+                color: #84b5fe;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                text-overflow: ellipsis;
+                font-size: 13px;
+                text-transform: uppercase;
+                width: calc(100% - 40px);
+                font-weight: 800;
+            }
+        }
+    }
+
+    .div-container-header-card-accommodation{
+        height: $container-header-heigh;
+        width: 100%;
+        .div-header-image{
+            width: 20%;
+            height: inherit;
+            float: left;
+        }
+
+        .div-header-policy-info{
+            width: 35%;
+            height: inherit;
+            float: left;
+        }
+
+        .div-header-capacity{
+            width: 15%;
+            height: inherit;
+            float: left;
+        }
+
+        .div-header-quantity{
+            width: 10%;
+            height: inherit;
+            float: left;
+        }
+
+        .div-header-reserve{
+            width: 20%;
+            height: inherit;
+            float: left;
+        }
+    }
+
+
+    
+    
+}
